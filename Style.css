@@ -1,0 +1,1723 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: IRANSansMobile-fa;
+    user-select: none;
+}
+
+body {
+    direction: rtl;
+
+}
+
+@font-face {
+    font-family: IRANSansMobile-fa;
+    font-style: normal;
+    font-weight: bold;
+    src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: IRANSansMobile-fa;
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://passenger-pwa-cdn.snapp.ir/fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2');
+    font-display: fallback;
+}
+
+.Header {
+    width: 100%;
+    height: 95px;
+    background: rgb(255, 255, 255);
+    padding: 20px 10px 0 0;
+    display: flex;
+    border-bottom: 0.1px solid rgb(214, 214, 214);
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 1;
+}
+
+.Header .Logo img {
+    height: 34;
+    width: 92;
+    margin: 15px 165px 0px 0px;
+}
+
+.Header .Menu1 ul li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 100%;
+    font-weight: light;
+    margin: 15px 8px 0px 0px;
+}
+
+.Header .Menu1 ul li a {
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+    margin: 0;
+    padding: 0;
+}
+
+.First {
+    display: flex;
+    margin: 0 auto;
+}
+
+.Snappp {
+    background: #21aa58;
+    width: 50.5%;
+    height: 422px;
+    margin-top: 95px;
+}
+
+.IMG-Man {
+    width: 49.5%;
+    margin-top: 95px;
+}
+
+.IMG-Man #MAN {
+    height: 422px;
+    width: 752px;
+}
+
+.Snappp .H11 {
+    color: white;
+    margin-top: 32px;
+    margin-right: 230px;
+    margin-left: 35px;
+    line-height: 52px;
+    font-size: 36px;
+}
+
+.text-info {
+    color: white;
+    margin-top: 32px;
+    margin-right: 230px;
+    font-size: 20.5px;
+}
+
+#Number {
+    margin-top: 20px;
+    margin-right: 230px;
+    text-align: right;
+    line-height: 48px;
+    width: 245px;
+    outline: none;
+    display: inline-block;
+    flex-grow: 1;
+    font-size: inherit;
+    border: none;
+    font-family: inherit;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.Circle {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 14px;
+}
+
+.Send-Link {
+    background: white;
+    border: white;
+    width: 125px;
+    color: #00d16f;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 16px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.Web {
+    border: 1px solid white;
+    width: 250px;
+    border-radius: 6px;
+    height: 48px;
+    text-align: center;
+    margin-right: 230px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.Web-App {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0 8px;
+    position: absolute;
+    margin-left: -50px;
+    left: 29%;
+    margin-top: 10px;
+}
+
+.Download {
+    width: 100%;
+    display: flex;
+    height: 200px;
+    padding-right: max(140px, 15%);
+    padding-left: max(140px, 15%);
+    align-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Img-Download {
+    width: 160px;
+}
+
+.Download-img {
+    width: 160px;
+    height: 47px;
+}
+
+.Web-DL {
+    width: 160px;
+    height: 46px;
+}
+
+.Apple-DL {
+    width: 160px;
+    height: 55px;
+}
+
+.Header div i {
+    display: none;
+}
+
+.Header-App {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.App {
+    background-color: #f2f5f8;
+    width: 100%;
+}
+
+.Services {
+    background-color: #f2f5f8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    width: 1000px;
+}
+
+.Service {
+    display: inline-flex;
+    background-color: white;
+    border-radius: 18px;
+    text-decoration: none;
+    width: 321px;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 90px;
+}
+
+.In-box {
+    padding: 4px;
+    text-align: right;
+    line-height: 1.7;
+}
+
+.In-box>h3 {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    color: black;
+    font-size: 100%;
+}
+
+.In-box>p {
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+.App .Services .Service .Img-service {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 62px;
+    height: 62px;
+}
+
+.App .Services .Service .Img-service2 {
+    width: 72px;
+    height: 72px;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.End-box {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px auto;
+    padding-bottom: 40px;
+}
+
+.Service2 {
+    display: flex;
+    background-color: white;
+    border-radius: 18px;
+    text-decoration: none;
+    width: 321px;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.Service2 .In-box p {
+    margin-left: 20%;
+}
+
+.Service3 {
+    display: flex;
+    background-color: white;
+    border-radius: 18px;
+    text-decoration: none;
+    width: 321px;
+    align-items: center;
+    height: auto;
+}
+
+.End-box .Service2 img {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 62px;
+    height: 62px;
+}
+
+.End-box .Service3 img {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 62px;
+    height: 62px;
+}
+
+.Food-img a img {
+    width: 75%;
+    margin-top: 75px;
+    margin-bottom: 60px;
+    margin-right: 180px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.Super-app {
+    display: flex;
+    position: absolute;
+}
+
+.App-snapp {
+    width: 50%;
+}
+
+.App-snapp img {
+    width: 100%;
+    height: 440px;
+    border-radius: 5px;
+}
+
+.App-text {
+    width: 50%;
+    height: 440px;
+}
+
+.App-text>h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.App-text>p {
+    width: 65%;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-right: 40px;
+    line-height: 26px;
+}
+
+.Advantages {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-right: 215px;
+    padding-left: 85px;
+    bottom: 0;
+    gap: 10px;
+    margin-top: 375px;
+}
+
+.Advantages .in-advantages {
+    background-color: #f2f5f8;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 190px;
+    margin-left: 75px;
+}
+
+.Web- {
+    display: none;
+}
+
+.Advantages .in-advantages .img-Advantages {
+    display: flex;
+    margin-right: 25px;
+}
+
+.Advantages .in-advantages>h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.Advantages .in-advantages>pre {
+    font-size: 12px;
+    font-family: inherit;
+}
+
+.Ad {
+    background: #f2f5f8;
+    ;
+    margin-top: 150px;
+    padding-right: 140px;
+    padding-left: 140px;
+    text-align: center;
+}
+
+.Ad .Sign-up-caption {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    padding-top: 40px;
+}
+
+.Ad .Caption {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.Sign-up {
+    text-decoration: none;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.Sign-up-btn {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 209, 112);
+    border: none;
+    border-radius: 7px;
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.Sign-up-btn:hover {
+    background-color: rgb(36, 227, 138);
+}
+
+.in-advantages p {
+    display: none;
+}
+
+#Logo-Menu {
+    display: none;
+}
+
+.Ad .video-box .video {
+    width: 86%;
+    border-radius: 9px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Advantages-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    width: 100%;
+    margin-right: 75px;
+    padding-bottom: 30px;
+}
+
+.text-info2 {
+    display: none;
+}
+
+.Box-adv {
+    width: 42%;
+    height: 190px;
+    background-color: #fff;
+    border-radius: 18px;
+    margin: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: center;
+    display: flex;
+    text-align: right;
+}
+
+.Advantages-box .header-advantages-box {
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    padding-right: 15px;
+}
+
+.Advantages-box .Description {
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+#Menu2 {
+    display: none;
+}
+
+.Advantages-box .Box-adv img {
+    width: 120px;
+}
+
+.Footer {
+    height: 325px;
+    background: white;
+}
+
+.Menu1-footer {
+    padding-right: 18%;
+    padding-left: 18%;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.Menu1-footer>a {
+    text-decoration: none;
+    color: rgb(28, 28, 28);
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.Footer .Icon {
+    margin: auto;
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.Footer .Icon>a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+
+.Club2 {
+    display: none;
+}
+
+.Logo-validity {
+    margin: auto;
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    gap: 125px;
+}
+
+@media (min-width: 320px) and (max-width: 840px) {
+    .Container {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .Header {
+        width: 100%;
+        position: fixed;
+        height: 64px;
+    }
+
+    .Header .Logo img {
+        height: 32px;
+        width: 90px;
+        display: block;
+        position: absolute;
+        margin-left: 10px;
+        left: 0;
+        bottom: 1;
+        top: 0;
+    }
+
+    .Header .Menu1 ul li a {
+        display: none;
+    }
+
+    .Header #Menu2 {
+        display: block;
+    }
+
+    .Header #Menu2 li {
+        display: none;
+        list-style-type: none;
+        border: 1px solid rgb(219, 219, 219);
+    }
+
+    .Header #Logo-Menu {
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        z-index: 99999999999;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+    }
+
+    .Snappp {
+        background: #21aa58;
+        width: 100%;
+        height: 266px;
+        margin-top: 64px;
+    }
+
+    .Snappp .H11 {
+        font-weight: bold;
+        color: white;
+        margin-top: 12px;
+        font-size: 24px;
+        margin-right: 22px;
+    }
+
+    #Number {
+        display: none;
+    }
+
+    .Send-Link {
+        display: none;
+    }
+
+    .Web {
+        display: none;
+    }
+
+    .Web- {
+        border: 1px solid white;
+        width: auto;
+        border-radius: 6px;
+        height: 48px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        position: relative;
+        display: block;
+    }
+
+    .Down {
+        border: 1px solid white;
+        width: 100%;
+        border-radius: 6px;
+        height: 48px;
+        text-align: center;
+        position: relative;
+        background: white;
+        font-weight: bold;
+        color: rgb(55, 55, 55);
+        cursor: pointer;
+    }
+
+    .Download {
+        display: none;
+    }
+
+    .text-info {
+        display: none;
+    }
+
+    .text-info2 {
+        margin-top: 8px;
+        margin-right: 22px;
+        font-size: 17px;
+        color: white;
+        display: block;
+    }
+
+    .Header-App {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .Service p {
+        display: none;
+    }
+
+    .Service2 p {
+        display: none;
+    }
+
+    .Service3 p {
+        display: none;
+    }
+
+    .Club {
+        display: none;
+    }
+
+    .Service {
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 140px;
+        margin-bottom: 50px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .End-box {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .Service2,
+    .Service3 {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 140px;
+        margin-bottom: 50px;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .App .Services .Service .Img-service {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 62px;
+        height: 62px;
+    }
+
+    .Service2 {
+        width: 140px;
+        background: white;
+        margin: auto;
+    }
+
+    .Service3 {
+        margin-bottom: -30px;
+        width: 140px;
+        height: 140px;
+        background: white;
+    }
+
+    .In-box {
+        padding: 0;
+    }
+
+    .In-box>h3 {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 7px;
+        color: black;
+        font-size: 100%;
+    }
+
+    .Services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    .IMG-Man {
+        display: none;
+    }
+
+    .IMG-Man #MAN {
+        display: none;
+    }
+
+    .Services {
+        width: 100%;
+    }
+
+    .Food-img {
+        width: 100%;
+    }
+
+    .Food-img a img {
+        width: 93%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+        height: 160px;
+        border-radius: 10px;
+    }
+
+    .Super-app {
+        display: block;
+    }
+
+    .App-snapp {
+        width: 100%;
+    }
+
+    .App-snapp img {
+        display: block;
+        width: 100%;
+        height: 180px;
+        border-radius: 0px;
+    }
+
+    .App-text {
+        width: 100%;
+    }
+
+    .App-text h2 {
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .App-text p {
+        width: 93%;
+        font-size: 14px;
+        margin-top: 0px;
+        margin-right: 20px;
+        line-height: 24px;
+    }
+
+    .Advantages {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        padding-left: 0px;
+        padding-right: 20px;
+        bottom: 0;
+        gap: 137px;
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Advantages .in-advantages {
+        background-color: #f2f5f8;
+        border-radius: 18px;
+        width: 97%;
+        height: 190px;
+        margin-left: 250px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Advantages .in-advantages pre {
+        display: none;
+    }
+
+    .in-advantages .PPP {
+        font-size: 11px;
+        display: block;
+    }
+
+    .Advantages .in-advantages div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Ad {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 145px;
+        padding-bottom: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .Ad .Sign-up-caption {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 52px;
+    }
+
+    .video-box {
+        width: 100%;
+    }
+
+    .Ad .video-box .video {
+        width: 100%;
+    }
+
+    .Advantages-box {
+        margin-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Box-adv {
+        height: auto + 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .Menu1-footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 8px;
+        padding-top: 40px;
+        justify-content: center;
+        padding-left: 0;
+        gap: 0;
+    }
+
+    .Logo-validity {
+        gap: 50;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 1024px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Header .Logo img {
+        margin: 15px 18px 0px 0px;
+    }
+
+    .Header .Menu1 ul li {
+        font-size: 89%;
+        letter-spacing: -.2px;
+        padding: 0 5px;
+        margin: 15px 7px 0px 0px;
+    }
+
+    .Snappp {
+        width: 60%;
+        height: 450px;
+    }
+
+    .Snappp .H11 {
+        margin: 32px 80px 0px 60px;
+    }
+
+    .Snappp .text-info {
+        margin: 20px 80px 0px 0px;
+        font-size: 17px;
+    }
+
+    .Snappp #Number {
+        margin: 20px 80px 0px 0px;
+        width: 200px;
+    }
+
+    ::placeholder {
+        padding-right: 10px;
+    }
+
+    .Send-Link {
+        width: 100px;
+    }
+
+    .Web {
+        margin: 40px 80px 0px 0px;
+        width: 200px;
+    }
+
+    .Web a {
+        font-size: 16px;
+        padding: 0px;
+        margin-left: -47px;
+    }
+
+    .IMG-Man {
+        width: 40%;
+        height: 450px;
+    }
+
+    .IMG-Man #MAN {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Download {
+        gap: 5px;
+    }
+
+    .Services {
+        width: 100%;
+        gap: 0px;
+        margin-right: 0px;
+    }
+
+    .End-box {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .Service {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 16px;
+        margin-right: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Service .In-box {
+        text-align: center;
+    }
+
+    .Service2,
+    .Service3 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Service2 {
+        margin-right: 150px;
+    }
+
+    .Service2 .In-box p {
+        text-align: center;
+        padding: 0px 30px 0px 0px;
+    }
+
+    .Service2 .In-box h3 {
+        text-align: center;
+    }
+
+    .Service3 .In-box {
+        text-align: center;
+    }
+
+    .Food-img {
+        width: 100%;
+    }
+
+    .Food-img a img {
+        width: 91%;
+        margin: 60px 40px 60px 40px;
+        height: 300px;
+    }
+
+    .Header-App {
+        width: 100%;
+    }
+
+    .Super-app {
+        display: block;
+    }
+
+    .App-snapp {
+        width: 100%;
+    }
+
+    .App-snapp img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .App-text {
+        width: 100%;
+    }
+
+    .App-text h2 {
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+
+    .App-text p {
+        width: 93%;
+        font-size: 14px;
+        margin-top: 0px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+
+    .Advantages {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-right: 35px;
+        padding-left: 20px;
+        padding-top: 30px;
+        bottom: 0;
+        gap: 0px;
+        margin-top: 375px;
+    }
+
+    .Advantages .in-advantages {
+        width: 220px;
+        margin-left: 20px;
+    }
+
+    .Advantages .in-advantages .img-Advantages {
+        margin-right: 0px;
+    }
+
+    .in-advantages pre {
+        display: none;
+    }
+
+    .in-advantages .PPP {
+        display: block;
+        font-size: 12px;
+    }
+
+    .Ad {
+        padding: 70px;
+    }
+
+    .Ad .Sign-up-caption {
+        padding-top: 0;
+    }
+
+    .Ad .video-box {
+        width: 100%;
+    }
+
+    .Ad .video-box .video {
+        margin-left: 60px;
+        width: 100%;
+    }
+
+    .Advantages-box {
+        flex-direction: column;
+        margin-right: 0px;
+    }
+
+    .Box-adv {
+        flex-direction: column;
+        height: 260px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Menu1-footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 3%;
+        padding-left: 0%;
+        gap: 15px;
+    }
+
+    .Menu1-footer a {
+        margin-left: 0;
+    }
+
+    .Menu1-footer :nth-child(9) {
+        margin-right: 45%;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1500px) {
+    .Header {
+        width: 100%;
+        height: 95px;
+        background: rgb(255, 255, 255);
+        padding: 20px 10px 0 0;
+        display: flex;
+        border-bottom: 0.1px solid rgb(214, 214, 214);
+        justify-content: flex-start;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .Header .Logo img {
+        height: 34;
+        width: 92;
+        margin: 15px 30px 0px 0px;
+    }
+
+    .Header .Menu1 ul li {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 100%;
+        font-weight: light;
+        margin: 15px 8px 0px 0px;
+    }
+
+    .Header .Menu1 ul li a {
+        text-decoration: none;
+        color: rgb(79, 79, 79);
+        margin: 0;
+        padding: 0;
+    }
+
+    .First {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .Snappp {
+        background: #21aa58;
+        width: 50.5%;
+        height: 500px;
+        margin-top: 95px;
+    }
+
+    .IMG-Man {
+        width: 49.5%;
+        margin-top: 95px;
+    }
+
+    .IMG-Man #MAN {
+        height: 500px;
+        width: 100%;
+    }
+
+    .Snappp .H11 {
+        color: white;
+        margin-top: 32px;
+        margin-right: 100px;
+        margin-left: 40px;
+        line-height: 52px;
+        font-size: 36px;
+    }
+
+    .text-info {
+        display: none;
+    }
+
+    .text-info2 {
+        color: white;
+        margin-top: 32px;
+        margin-right: 100px;
+        font-size: 20.5px;
+        display: block;
+    }
+
+    #Number {
+        margin-top: 32px;
+        margin-right: 100px;
+        text-align: right;
+        line-height: 48px;
+        width: 245px;
+        outline: none;
+        display: inline-block;
+        flex-grow: 1;
+        font-size: inherit;
+        border: none;
+        font-family: inherit;
+        background: transparent;
+        border-bottom: 1px solid white;
+        color: white;
+    }
+
+    .Circle {
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 0.74);
+        font-size: 14px;
+    }
+
+    .Send-Link {
+        background: white;
+        border: white;
+        width: 100px;
+        color: #00d16f;
+        font-weight: bold;
+        font-size: 14px;
+        margin-right: 16px;
+        height: 40px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .Web {
+        border: 1px solid white;
+        width: 250px;
+        border-radius: 6px;
+        height: 48px;
+        text-align: center;
+        margin-right: 100px;
+        margin-top: 32px;
+        position: relative;
+    }
+
+    .Web-App {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 0 8px;
+        position: absolute;
+        margin-left: -50px;
+        left: 29%;
+        margin-top: 10px;
+    }
+
+    .Download {
+        width: 100%;
+        display: flex;
+        height: 200px;
+        padding-right: max(140px, 15%);
+        padding-left: max(140px, 15%);
+        align-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Img-Download {
+        width: 160px;
+    }
+
+    .Download-img {
+        width: 160px;
+        height: 47px;
+    }
+
+    .Web-DL {
+        width: 160px;
+        height: 46px;
+    }
+
+    .Apple-DL {
+        width: 160px;
+        height: 55px;
+    }
+
+    .Header div i {
+        display: none;
+    }
+
+    .Header-App {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 36px;
+        line-height: 52px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .App {
+        background-color: #f2f5f8;
+        width: 100%;
+    }
+
+    .Services {
+        background-color: #f2f5f8;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin: auto;
+        width: 1000px;
+    }
+
+    .Service {
+        display: inline-flex;
+        background-color: white;
+        border-radius: 18px;
+        text-decoration: none;
+        width: 321px;
+        align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 90px;
+    }
+
+    .Club2 {
+        display: none;
+    }
+
+    .In-box {
+        padding: 4px;
+        text-align: right;
+        line-height: 1.7;
+    }
+
+    .In-box>h3 {
+        margin-bottom: 4px;
+        margin-top: 4px;
+        color: black;
+        font-size: 100%;
+    }
+
+    .In-box>p {
+        font-size: 14px;
+        color: #a3a3a3;
+    }
+
+    .App .Services .Service .Img-service {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 62px;
+        height: 62px;
+    }
+
+    .App .Services .Service .Img-service2 {
+        width: 72px;
+        height: 72px;
+        margin-right: 8px;
+        align-items: center;
+    }
+
+    .End-box {
+        display: grid;
+        width: 50%;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 20px auto;
+        padding-bottom: 40px;
+    }
+
+    .Service2 {
+        display: flex;
+        background-color: white;
+        border-radius: 18px;
+        text-decoration: none;
+        width: 321px;
+        align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: auto;
+        margin-right: 0px;
+    }
+
+    .Service2 .In-box p {
+        margin-left: 20%;
+    }
+
+    .Service3 {
+        display: flex;
+        background-color: white;
+        border-radius: 18px;
+        text-decoration: none;
+        width: 321px;
+        align-items: center;
+        height: auto;
+    }
+
+    .End-box .Service2 img {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 62px;
+        height: 62px;
+    }
+
+    .End-box .Service3 img {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 62px;
+        height: 62px;
+    }
+
+    .Food-img a img {
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        margin-right: 50px;
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .Super-app {
+        display: flex;
+        position: absolute;
+    }
+
+    .App-snapp {
+        width: 50%;
+    }
+
+    .App-snapp img {
+        width: 100%;
+        height: 440px;
+        border-radius: 5px;
+    }
+
+    .App-text {
+        width: 50%;
+        height: 440px;
+    }
+
+    .App-text>h2 {
+        font-size: 22px;
+        margin-bottom: 8px;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    .App-text>p {
+        width: 65%;
+        font-size: 14px;
+        margin-top: 8px;
+        margin-right: 40px;
+        line-height: 26px;
+    }
+
+    .Advantages {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-right: 165px;
+        padding-left: 85px;
+        bottom: 0;
+        gap: 10px;
+        margin-top: 375px;
+    }
+
+    .Advantages .in-advantages {
+        background-color: #f2f5f8;
+        border-radius: 18px;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 190px;
+        margin-left: 75px;
+    }
+
+    .Web- {
+        display: none;
+    }
+
+    .Advantages .in-advantages .img-Advantages {
+        display: flex;
+        margin-right: 25px;
+    }
+
+    .Advantages .in-advantages>h3 {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .Advantages .in-advantages>pre {
+        font-size: 12px;
+        font-family: inherit;
+    }
+
+    .Ad {
+        background: #f2f5f8;
+        margin-top: 150px;
+        padding-right: 100px;
+        padding-left: 100px;
+        text-align: center;
+    }
+
+    .Ad .Sign-up-caption {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 52px;
+        padding-top: 40px;
+    }
+
+    .Ad .Caption {
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .Sign-up {
+        text-decoration: none;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .Sign-up-btn {
+        color: white;
+        font-weight: bold;
+        background-color: rgb(0, 209, 112);
+        border: none;
+        border-radius: 7px;
+        width: 170px;
+        height: 50px;
+        font-size: 17px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    .Sign-up-btn:hover {
+        background-color: rgb(36, 227, 138);
+    }
+
+    .in-advantages p {
+        display: none;
+    }
+
+    #Logo-Menu {
+        display: none;
+    }
+
+    .Ad .video-box .video {
+        width: 100%;
+        border-radius: 9px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .Advantages-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0px;
+        width: 100%;
+        padding-bottom: 30px;
+        gap: 0px;
+    }
+
+    .Box-adv {
+        width: 47.5%;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 18px;
+        margin: 10px;
+        padding-left: 5px;
+        padding-right: 0px;
+        align-items: center;
+        display: flex;
+        text-align: right;
+    }
+
+    .Advantages-box .header-advantages-box {
+        font-weight: 700;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 16px;
+        padding-right: 15px;
+    }
+
+    .Advantages-box .Description {
+        font-size: 14px;
+        font-weight: lighter;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+
+    #Menu2 {
+        display: none;
+    }
+
+    .Advantages-box .Box-adv img {
+        width: 120px;
+    }
+
+    .Footer {
+        height: 325px;
+        background: white;
+    }
+
+    .Menu1-footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 3%;
+        padding-left: 0%;
+        gap: 15px;
+    }
+
+    .Menu1-footer>a {
+        text-decoration: none;
+        color: rgb(28, 28, 28);
+        margin-left: 0;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 8px;
+    }
+
+    .Footer .Icon {
+        margin: auto;
+        display: flex;
+        width: 200px;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+
+    .Footer .Icon>a {
+        text-decoration: none;
+        color: black;
+        font-size: xx-large;
+    }
+
+    .Logo-validity {
+        margin: auto;
+        display: flex;
+        width: 200px;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        gap: 125px;
+    }
+}
