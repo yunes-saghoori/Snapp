@@ -562,11 +562,16 @@ body {
     gap: 125px;
 }
 
+.Close {
+    display: none;
+}
+
 @media (min-width: 320px) and (max-width: 840px) {
     .Container {
         justify-content: center;
         align-items: center;
         width: auto;
+        overflow-x: hidden;
     }
 
     .Header {
@@ -594,10 +599,41 @@ body {
         display: block;
     }
 
+
     .Header #Menu2 li {
         display: none;
         list-style-type: none;
         border: 1px solid rgb(219, 219, 219);
+    }
+
+    .Close {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .Header .MenuOpen {
+        display: block;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 63px;
+        font-size: 18px;
+        text-align: center;
+        background: #21aa58;
+    }
+
+    .Header .MenuOpen li {
+        display: block;
+        list-style-type: none;
+        border-bottom: 1px solid white;
+        padding: 5px;
+    }
+
+    .Header .MenuOpen li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
     }
 
     .Header #Logo-Menu {
@@ -606,7 +642,7 @@ body {
         display: block;
         position: absolute;
         right: 15px;
-        top: 20px;
+        top: 17px;
         z-index: 99999999999;
         cursor: pointer;
         border: none;
@@ -618,6 +654,21 @@ body {
         width: 100%;
         height: 266px;
         margin-top: 64px;
+    }
+
+    .Snapppp {
+        background: #21aa58;
+        width: 100%;
+        height: 266px;
+        margin-top: 334px;
+    }
+
+    .Snapppp .H11 {
+        font-weight: bold;
+        color: white;
+        margin-top: 12px;
+        font-size: 24px;
+        margin-right: 22px;
     }
 
     .Snappp .H11 {
